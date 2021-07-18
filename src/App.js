@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import styled from 'styled-components'
 import './App.css';
+
+import { Intervalo } from './components/intervalo';
+import { Soma } from './components/soma';
+import { Sorteio } from './components/sorteio';
+import { Media } from './components/media';
+
+
+const Line = styled.div`
+  display: flex;
+`
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Exercicio 001 - Redux (Simples)</h1>
+      <Line>
+        <Intervalo color="blue" />
+      </Line>
+      <Line>
+        <Media />
+        <Soma />
+        <Sorteio />
+      </Line>
     </div>
   );
 }
