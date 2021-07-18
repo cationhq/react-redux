@@ -6,12 +6,12 @@ import { connect } from 'react-redux'
 const StyleSorteio = styled.div`    
 `
 
-const SorteioComponent = props => (
+const SorteioComponent = ({ min, max }) => (
     <Card color="green">
         <h1 id="header">Sorteio de um Número</h1>
         <StyleSorteio>
             <span>Resultado: </span>
-            <strong>7</strong>
+            <strong>{parseInt(Math.random() * max - min) + min}</strong>
         </StyleSorteio>
     </Card>
 )

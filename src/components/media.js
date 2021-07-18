@@ -6,12 +6,12 @@ import { connect } from 'react-redux'
 const StyleMedia = styled.div` 
 `
 
-const MediaComponent = props => (
+const MediaComponent = ({ min, max }) => (
     <Card Card color="blue" >
         <h1 id="header">Média dos Números</h1>
         <StyleMedia>
             <span>Resultado: </span>
-            <strong>{(props.min + props.max) / 2}</strong>
+            <strong>{(min + max) / 2}</strong>
         </StyleMedia>
     </Card >
 )

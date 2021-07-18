@@ -6,12 +6,12 @@ import { connect } from 'react-redux'
 const StyleSoma = styled.div`
 `
 
-const SomaComponent = props => (
+const SomaComponent = ({ min, max }) => (
     <Card color="purple">
         <h1 id="header">Soma dos Números</h1>
         <StyleSoma>
             <span>Resultado: </span>
-            <strong>{props.min + props.max}</strong>
+            <strong>{min + max}</strong>
         </StyleSoma>
     </Card>
 )

@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jul 18 2021 16:11:07 GMT-0300 (Horário Padrão de Brasília)
+------------------------------------------------------
+
+Modified files:
+* src/components/intervalo.js
+* src/components/media.js
+* src/components/soma.js
+* src/components/sorteio.js
+* src/index.js
+
+
+Created files:
+* .vscode/extensions.json
+* src/store/storeConfig.js
+
+
+Deleted files:
+
+
+Renamed files:

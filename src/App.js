@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <h1>Exercicio 001 - Redux (Simples)</h1>
       <Line>
-        <Intervalo color="blue" />
+        <Intervalo />
       </Line>
       <Line>
         <Media />
