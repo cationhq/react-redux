@@ -1,3 +1,6 @@
+# Notion Documentation
+https://tourmaline-mouse-5a9.notion.site/React-Redux-7c7fff51cf7f4a7690e27f70a9e84013
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
