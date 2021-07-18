@@ -17,11 +17,11 @@ export const Intervalo = props => (
         <StyleIntervalo>
             <span>
                 <strong>Mínimo </strong>
-                <input type="number" value={0} readonly />
+                <input type="number" defaultValue={0} readOnly />
             </span>
             <span>
                 <strong>Máximo </strong>
-                <input type="number" value={10} readonly />
+                <input type="number" defaultValue={10} readOnly />
             </span>
         </StyleIntervalo>
     </Card>

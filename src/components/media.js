@@ -1,16 +1,24 @@
 import styled from 'styled-components'
 import { Card } from './card'
+import { connect } from 'react-redux'
 
-const StyleMedia = styled.div`
-    
+
+const StyleMedia = styled.div` 
 `
 
-export const Media = props => (
-    <Card color="blue">
+const MediaComponent = props => (
+    <Card Card color="blue" >
         <h1 id="header">Média dos Números</h1>
         <StyleMedia>
             <span>Resultado: </span>
-            <strong> 5</strong>
+            <strong>{(props.min + props.max) / 2}</strong>
         </StyleMedia>
-    </Card>
+    </Card >
 )
+
+const mapStateToProps = state => ({
+    min: state.numeros.min,
+    max: state.numeros.max,
+})
+
+export const Media = connect(mapStateToProps)(MediaComponent)
