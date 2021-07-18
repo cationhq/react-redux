@@ -11,18 +11,22 @@ const StyleIntervalo = styled.div`
     }
 `
 
-export const Intervalo = props => (
-    <Card>
-        <h1 id="header">Intervalo de Númerios</h1>
-        <StyleIntervalo>
-            <span>
-                <strong>Mínimo </strong>
-                <input type="number" value={0} readonly />
-            </span>
-            <span>
-                <strong>Máximo </strong>
-                <input type="number" value={10} readonly />
-            </span>
-        </StyleIntervalo>
-    </Card>
-)
+export const Intervalo = props => {
+    const [[min, max], [setMin, setMax]] = props.min_max
+
+    return (
+        <Card>
+            <h1 id="header">Intervalo de Númerios</h1>
+            <StyleIntervalo>
+                <span>
+                    <strong>Mínimo </strong>
+                    <input type="number" value={min} onChange={e => setMin(+e.target.value)} />
+                </span>
+                <span>
+                    <strong>Máximo </strong>
+                    <input type="number" value={max} onChange={e => setMax(+e.target.value)} />
+                </span>
+            </StyleIntervalo>
+        </Card>
+    )
+}
